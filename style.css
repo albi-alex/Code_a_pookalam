@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: #f8edcf;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-x: hidden;
+
+    font-family:
+        "Noto Sans Malayalam",
+        "Nirmala UI",
+        "Kartika",
+        sans-serif;
+}
+
+
+.header {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px 20px 4px;
+}
+
+
+.header h1 {
+    color: #70172d;
+
+    font-family:
+        "Noto Sans Malayalam",
+        "Nirmala UI",
+        "Kartika",
+        sans-serif;
+
+
+    font-size: clamp(
+        28px,
+        3.2vw,
+        46px
+    );
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    letter-spacing: 0;
+
+    text-align: center;
+
+    max-width: 1200px;
+}
+
+.pookalam-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 10px 18px;
+}
+
+#pookalam {
+    display: block;
+
+    width: min(
+        88vw,
+        900px
+    );
+
+    height: auto;
+
+    cursor: pointer;
+}
+
+
+@media (min-width: 1100px) {
+
+    .header {
+        padding-top: 16px;
+    }
+
+    .header h1 {
+        font-size: 44px;
+    }
+
+    #pookalam {
+        width: min(
+            82vw,
+            900px
+        );
+    }
+}
+
+
+@media (
+    min-width: 600px
+) and (
+    max-width: 1099px
+) {
+
+    .header {
+        padding-top: 18px;
+    }
+
+    .header h1 {
+        font-size: 38px;
+    }
+
+    #pookalam {
+        width: 86vw;
+    }
+}
+
+
+@media (max-width: 599px) {
+
+    .header {
+        padding: 16px 12px 6px;
+    }
+
+    .header h1 {
+        font-size: 27px;
+        line-height: 1.4;
+    }
+
+    .pookalam-container {
+        padding: 0 5px 12px;
+    }
+
+    #pookalam {
+        width: 94vw;
+    }
+}
